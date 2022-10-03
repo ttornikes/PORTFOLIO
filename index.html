@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=3.0, user-scalable=yes">
+
+    <meta property="og:title" content="portfolio website" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="portfolio website " />
+    <meta property="og:description" content="i am person who love coding and i enjoy doing it." />
+    <meta name="description" content="i am person who love coding and i enjoy doing it." />
+    <!-- -=============== favIcon -=============== -->
+    <link rel="shortcut icon" href="img/LOgo.png" >
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <!--=============== CSS/CSCC ===============-->
+    <link rel="stylesheet" href="css/style.scss">
+    <link rel="stylesheet" href="css/style.css.map">
+    <link rel="stylesheet" href="css/style.css">
+    <title>PorTfolio</title>
+</head>
+<body>
+
+    <!-- ==============header============== -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">
+                <img src="./img/LOgo.png" alt="logo" >
+            </a>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bxs-home'></i>
+                            <span>HOME </span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class='bx bxs-user-circle'></i>
+                            <span> About </span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">
+                            <i class='bx bxs-briefcase' ></i>
+                            <span> My Work  </span>
+                        </a>
+                    </li>
+                    <li class="nav__item ">
+                        <a href="#resume" class="nav__link">
+                            <i class='bx bxs-notepad'></i>
+                            <span class="resume__link"> CV  </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+             <!-- them change button -->
+             <i class='bx bx-moon change-theme' id="theme-button" ></i>
+
+        </nav>
+    </header>
+    <!-- ===============main================ -->
+    <main class="main">
+        <!-- =====================home===================== -->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__items">
+                    <h2 class="home__title">
+                        Hello, I’m
+                    </h2>
+
+                    <h1 class="home__subtitle" id="homeSubtitle">
+                        <!-- Tornike SIlakadze -->
+                    </h1>
+
+                    <p class="home__description" >
+                        I’m a Front End Developer from Georgia,
+                        I am proficient in Web Development and Technologies around it. 
+                    </p>
+
+                    <div class="home__button button">
+                        <a href="#" class="button__link">
+                            Send Emile
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="home__images">
+                    <div class="home__orbe"></div>
+                        <div class="home__img">
+                            <img src="img/myimg.jpg" alt="myimg">
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__content">
+                    <div class="about__items">
+                        <h2 class="section__title">About Me</h2>
+
+                        <p class="section__description">
+                            Hello! My name is Tornike Silakadze and I am a Front End Developer. 
+                            I enjoy creating things that live on the internet.
+                            i primarly focused on writing clean, elegant, and efficient code.
+                            i am proficient in HTML, CSS "SCSS/SASS" and  javascript. 
+                            i also review existing code and can consult with you on how to improve it.
+                            i have worked companies that specialize in enterprise Web Site development.
+                        </p>
+
+                    </div>
+
+                    <div class="about__accordion__items">
+                        <header class="about__accordion__header">
+                            <i class='bx bxs-wink-smile  about__accordion-icon'></i>
+                            <h3 class="about__accordion__title">
+                                My Skills
+                            </h3>
+                            <div class="about__accordion__arrow">
+                                <i class='bx bxs-down-arrow '></i>
+                            </div>
+                        </header>
+
+                        <div class="about__accordion__content">
+                            <div class="about__accordion__item">
+                                <div class="about__accordion__language">
+                                    <i class='bx bx-chevrons-right about__accordion-icon' ></i>
+                                    HTML 5
+                                </div>
+                                <div class="about__accordion__language">
+                                    <i class='bx bx-chevrons-right about__accordion-icon' ></i>
+                                    CSS / scss /sass
+                                </div>
+                                <div class="about__accordion__language">
+                                    <i class='bx bx-chevrons-right about__accordion-icon' ></i>
+                                    javascript 
+                                </div>
+                                <div class="about__accordion__language">
+                                    <i class='bx bx-chevrons-right about__accordion-icon' ></i>
+                                    Figma / Xd
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        
+
+                </div>
+            </div>
+        </section>
+
+        <section class="work" id="work">
+            <div class="container">
+                <span class="section__subtitle">My Work</span>
+                <h2 class="section__title">
+                    My Resent Works<span>.</span>
+                </h2>
+
+                <div class="work__container swiper">
+                    <div class="swiper-wrapper">
+                        <article class="work__card swiper-slide">
+                            <img  class="work__img" src="img/Screenshot_1.png" alt="shoes">
+
+                            <div class="work__data">
+                                <h2 class="work__description">
+                                    About Shoes
+                                </h2>
+
+                                <div class="work__button button">
+                                    <a href="#" class="work__link">open</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="work__card swiper-slide">
+                            <img class="work__img"  src="img/Screenshot_2.png" alt="deapb.io">
+
+                            <div class="work__data">
+                                <h2 class="work__description">
+                                    About Some Information
+                                </h2>
+
+                                <div class="work__button button">
+                                    <a href="#" class="work__link">open</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="work__card swiper-slide">
+                            <img class="work__img"  src="img/Screenshot_3.png" alt="holux">
+
+                            <div class="work__data">
+                                <h2 class="work__description">
+                                    About Dream Houses
+                                </h2>
+
+                                <div class="work__button button">
+                                    <a href="#" class="work__link">open</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <div class="swiper-button-next">
+                        <i class='bx bx-chevron-right'></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class='bx bx-chevron-left' ></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <div class="contact__container container grid">
+                <div class="contact__image">
+                    <div class="contact__orbe"></div>
+
+                    <div class="contact__img">
+                        <img src="img/myimg.jpg" alt="myimg">
+                    </div>
+                </div>
+
+                <div class="contact__content">
+                    <div class="contact__data">
+                        <h2 class="section__title">Contact Me</h2>
+                        
+                        <p class="contact__description">
+                            Is there a problem finding  a good web developer? Need a 
+                            help someone? or need a interview? just contact us.
+                        </p>
+                    </div>
+
+                    <div class="contact__card">
+                        <div class="contact__card__box">
+                            <i class='bx bxs-phone-call'></i>
+
+                            <div>
+                                <h3 class="contact__card-title">
+                                    Call
+                                </h3>
+
+                                <p class="contact__card-description">
+                                    595-00-53-79
+                                </p>
+                            </div>
+
+                            <button class="button contact__card-button">
+                                <a href="#">Contact</a>
+                            </button>
+                        </div>
+
+                        <div class="contact__card__box">
+                            <i class='bx bxs-message-rounded-dots'></i>
+                            <div>
+                                <h3 class="contact__card-title">
+                                    Chat
+                                </h3>
+
+                                <p class="contact__card-description">
+                                    Viber
+                                </p>
+                            </div>
+
+                            <button class="button contact__card-button">
+                                <a href="#">Contact</a> 
+                            </button>
+                        </div>
+
+                        <div class="contact__card__box">
+                            <i class='bx bxs-video'></i>
+                            <div>
+                                <h3 class="contact__card-title">
+                                    Video Call
+                                </h3>
+
+                                <p class="contact__card-description">
+                                    Zoom
+                                </p>
+                            </div>
+
+                            <button class="button contact__card-button">
+                                <a href="#">Contact</a>
+                            </button>
+                        </div>
+
+                        <div class="contact__card__box">
+                            <i class='bx bxs-envelope'></i>
+                            <div>
+                                <h3 class="contact__card-title">
+                                    Message
+                                </h3>
+
+                                <p class="contact__card-description">
+                                    messenger
+                                </p>
+                            </div>
+
+                            <button class="button contact__card-button">
+                                <a href="#">Contact</a>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div>
+                    <a href="#" class="footer__logo">
+                        <h2>PorTFolio</h2><i class='bx bx-code-alt'></i>
+                    </a>
+                    <p class="footer__description">
+                        if you contact me. you can Know more!
+                    </p>
+
+                </div>
+                <div class="footer__content grid">
+                    <div>
+                        <h3 class="footer__title">
+                            About
+                        </h3>
+                        <ul class="footer__links">
+
+                            <li>
+                                <a href="#" class="footer__link">AboutUs</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer__link">Features</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer__link">News && Blog</a>
+                            </li>
+                            
+
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="footer__title">
+                            Support
+                        </h3>
+                        <ul class="footer__links">
+
+                            <li>
+                                <a href="#" class="footer__link">FAQs</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Support Center</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Contact Me</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="footer__title">
+                            Follow Us
+                        </h3>
+                        <ul class="footer__social">
+                            <a href="https://www.facebook.com/" target="blank" class="footer__link">
+                                <i class='bx bxl-facebook-circle'></i>
+                            </a>
+
+                            <a href="https://www.instagram.com/" target="blank" class="footer__link">
+                                <i class='bx bxl-instagram-alt'></i>
+                            </a>
+
+                            <a href="https://www.linkdln.com/" target="blank" class="footer__link">
+                                <i class='bx bxl-pinterest'></i>
+                            </a>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="footer__info container">
+                <span class="footer__copy">
+                    &#169; All rigths reserved. --Developed by Tornike--
+                </span>
+                <div class="footer__privacy">
+                    <a href="#"> Term & Agreements</a>
+                    <a href="#">privacy policy</a>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- scroll up! -->
+        <a href="#" class="scrollup" id="scrollUp">
+            <i class='bx bx-chevron-up-circle'></i>
+        </a>
+
+    </main>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <script src="js/scrollreveal.min.js"></script>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
